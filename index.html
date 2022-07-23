@@ -26,6 +26,7 @@
             class="form-control"
             id="name"
             aria-describedby="emailHelp"
+            placeholder="Enter your name"
           />
         </div>
         <div class="mb-3">
@@ -33,36 +34,72 @@
           <input
             type="email"
             class="form-control"
-            id="exampleInputEmail1"
+            id="email"
             aria-describedby="emailHelp"
+            placeholder="Enter your mail"
           />
         </div>
         <div class="mb-3">
-          <label for="age" class="form-label">Age (Optional)</label>
+          <label for="age" class="form-label" id="number-label">Age (Optional)</label>
           <input
             type="text"
             class="form-control"
-            id="exampleInputEmail1"
+            id="number"
             aria-describedby="emailHelp"
+            min="1"
+            max="100"
+            placeholder="Age"
           />
         </div>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label"
             >Which option best describes your current role?</label
           >
-          <select class="form-select" aria-label="Default select example">
+          <select class="form-select" aria-label="Default select example" id="dropdown">
             <option selected>Select Current role</option>
             <option value="1">Student</option>
             <option value="2">Full time job</option>
             <option value="3">Fulltime Learner</option>
           </select>
         </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1"
-            >Check me out</label
-          >
+
+        <div class="form-check">
+          <p>Would you recommend freeCodeCamp to a friend?</p>
+          
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Definitely
+          </label>
         </div>
+        <div class="form-check">
+          
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Maybe
+          </label>
+        </div>
+        <div class="form-check">
+          
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+          <label class="form-check-label" for="flexRadioDefault3">
+            Not Sure
+          </label>
+        </div>
+
+        <div class="form-check">
+          <p>What would you like to see improved? (Check all that apply)</p>
+          <input class="form-check-input" type="checkbox" value="fep" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Front-end projects
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="bep" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">
+            Back-end projects
+          </label>
+        </div>
+
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </div>

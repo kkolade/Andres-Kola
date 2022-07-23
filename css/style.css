@@ -6,3 +6,9 @@
     color: whitesmoke;
     font-style: italic;
 }
+.form-check,  .form-check > p
+{
+    color: black;
+    font-style: normal;
+    text-align: left;
+}
